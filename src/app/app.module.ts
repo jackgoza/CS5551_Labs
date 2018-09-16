@@ -9,6 +9,20 @@ import { HomeComponent } from './home/home.component';
 import { AuthService } from './auth.service';
 import { UserService } from './user.service';
 import { AuthGuard } from './auth.guard';
+import { SocialLoginModule, AuthServiceConfig, GoogleLoginProvider } from 'angular-6-social-login';
+
+// Configs 
+export function getAuthServiceConfigs() {
+  let config = new AuthServiceConfig(
+  [
+    {
+      id: GoogleLoginProvider.PROVIDER_ID,
+      provider: new GoogleLoginProvider("86226039731-3j69g3k3cahu84pg0lf50larc7so2573.apps.googleusercontent.com")
+    }
+  ]
+ );
+ return config;
+}
 
 @NgModule({
   declarations: [
@@ -34,9 +48,15 @@ import { AuthGuard } from './auth.guard';
         path: '',
         component: HomeComponent
       }
-    ])
+    ]),
+    SocialLoginModule
   ],
-  providers: [AuthService, UserService, AuthGuard],
+  providers: [AuthService, UserService, AuthGuard,
+    {
+      provide: AuthServiceConfig,
+      useFactory: getAuthServiceConfigs
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
