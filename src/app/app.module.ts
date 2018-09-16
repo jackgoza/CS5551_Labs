@@ -9,15 +9,23 @@ import { HomeComponent } from './home/home.component';
 import { AuthService } from './auth.service';
 import { UserService } from './user.service';
 import { AuthGuard } from './auth.guard';
-import { SocialLoginModule, AuthServiceConfig, GoogleLoginProvider } from 'angular-6-social-login';
+import { 
+  SocialLoginModule, 
+  AuthServiceConfig, 
+  GoogleLoginProvider,
+  FacebookLoginProvider } from 'angular-6-social-login';
 
 // Configs 
 export function getAuthServiceConfigs() {
   let config = new AuthServiceConfig(
   [
     {
+      id: FacebookLoginProvider.PROVIDER_ID,
+      provider: new FacebookLoginProvider("290301428237070")
+    },
+    {
       id: GoogleLoginProvider.PROVIDER_ID,
-      provider: new GoogleLoginProvider("86226039731-3j69g3k3cahu84pg0lf50larc7so2573.apps.googleusercontent.com")
+      provider: new GoogleLoginProvider("put your dang client key here buds")
     }
   ]
  );
