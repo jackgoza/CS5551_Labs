@@ -1,4 +1,12 @@
-<div>
+
+<div id="wrapper">
+  <div class="bgImg">
+    <div class="blur"></div>
+  </div>
+  <div class="signOut" style="width: 40%;">
+    <h1>Login</h1>
+    <div class="container1" style="width: 90%;">
+      <div>
 <form (submit)="loginUser($event)">
   <input type="text" placeholder="Admin Username" id="username">  
   <input type="password" placeholder="Admin Password" id="password">
@@ -7,7 +15,7 @@
 </div>
 <div>
 <button (click)="socialSignIn('google')">Sign in with Google</button>  
-</div>
-<div>
     <button (click)="socialSignIn('facebook')">Sign in with Facebook</button>
 </div>
+    </div>
+  </div>
