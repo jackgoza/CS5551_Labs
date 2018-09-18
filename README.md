@@ -3,7 +3,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 #
 
-**This is only a **compilation** of two partner's code. Please visit **
+# Our team
+This is only a **compilation** of two partner's code. Please visit
 https://github.com/MaxGolden/Lab-Assignment
 &nbsp; for more of the code base. 
 
