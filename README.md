@@ -22,6 +22,9 @@ npm install && npm start
 # To login
 click "login"->username="admin" password="admin"
 
+# To test the OAuth functionality
+put your oauth credintials in src/app/app.component.ts then go test it. Google works every time. Facebook is kinda wonky
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
