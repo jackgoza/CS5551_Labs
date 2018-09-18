@@ -1,10 +1,11 @@
 # Ang6Login
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.2.
 
-# This is only a **compilation** of two partner's code. Please visit
+#
+
+**This is only a **compilation** of two partner's code. Please visit **
 https://github.com/MaxGolden/Lab-Assignment
-&nbsp;
-for more of the code base. 
+&nbsp; for more of the code base. 
 
 ## Running the dang thing
 **To run this app locally you must do the following steps IN ORDER!**
