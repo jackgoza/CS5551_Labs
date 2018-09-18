@@ -12,14 +12,14 @@ https://github.com/MaxGolden/Lab-Assignment
 **To run this app locally you must do the following steps IN ORDER!**
 **if you do not start the php "backend" you will not be able to login or use the app**
 
-cd test/
+cd test/  
 php -S localhost:1234
 
 
 # New terminal window/tab located at app root
 npm install && npm start
 
-#To login
+# To login
 click "login"->username="admin" password="admin"
 
 ## Further help
