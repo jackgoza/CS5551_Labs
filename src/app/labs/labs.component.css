@@ -1,0 +1,56 @@
+@import"reset.css";
+@import"grid.css";
+@import"forms.css";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+body{
+    background:url(../images/main-bg.png) no-repeat 50% 0 #fff;
+    font:12px/18px Arial, Helvetica, sans-serif;
+    color:#b4b4b4;
+    position:relative;
+    min-width:970px;
+}
+html,body{height:100%;}
+html {min-width:970px;}
+.ic {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
+/* Global Structure---------------------------------------- */
+.main{
+    margin:0 auto;
+    position:relative;
+    width:950px;
+}
+.containerlab {
+    position: relative;
+    border: 1px solid #f2efe2;
+    width: 40vw;
+    max-width: 60vw;
+    margin: 0 auto;
+    border-radius: 0.1rem;
+    padding: 0.2rem 1rem;
+    color: #1e2440;
+    overflow: scroll;
+    margin-top: 10vh;
+}
+.text-boxlab {
+    max-height: 70vh;
+    overflow: scroll;
+}
+.text-boxlab:focus {
+    outline: none;
+}
+.text-boxlab p {
+    border-bottom: 1px dotted black;
+    margin: 0px !important;
+}
+.fa {
+    color: white;
+    background: #c6c6c6;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 1rem;
+    float: right;
+    width: 2rem;
+    height: 2rem;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}

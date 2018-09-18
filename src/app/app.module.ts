@@ -14,6 +14,10 @@ import {
   AuthServiceConfig, 
   GoogleLoginProvider,
   FacebookLoginProvider } from 'angular-6-social-login';
+import { ContactComponent } from './contact/contact.component';
+import { LabsComponent } from './labs/labs.component';
+import { ProjectComponent } from './project/project.component';
+import { AboutComponent } from './about/about.component';
 
 // Configs 
 export function getAuthServiceConfigs() {
@@ -37,7 +41,11 @@ export function getAuthServiceConfigs() {
     AppComponent,
     LoginComponent,
     AdminComponent,
-    HomeComponent
+    HomeComponent,
+    ContactComponent,
+    LabsComponent,
+    ProjectComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -55,6 +63,22 @@ export function getAuthServiceConfigs() {
       {
         path: '',
         component: HomeComponent
+      },
+      {
+        path: 'labs',
+        component: LabsComponent
+      },
+      {
+      	path: 'about',
+      	component: AboutComponent
+      },
+      {
+        path: 'contact',
+        component: ContactComponent
+      },
+      {
+      	path: 'project',
+      	component: ProjectComponent
       }
     ]),
     SocialLoginModule
